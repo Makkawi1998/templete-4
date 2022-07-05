@@ -1,0 +1,420 @@
+/* variables  */
+:root {
+    --sec-color:#898989;
+}
+
+
+
+@font-face {
+    font-family: bukrabold ;
+    src: url(../font/29ltbukrabold.ttf);
+}
+@font-face {
+    font-family: bukraregular ;
+    src: url(../font/29ltbukraregular.ttf);
+}
+body{
+font-family:bukraregular ;
+
+}
+/* start white space  */
+@media (max-width:400px) {
+
+    .white-space .container{
+        width: 369px;
+    }
+}
+.white-space .reg a {
+    color: var(--sec-color);
+    font-family: 'bukraregular';
+    text-decoration: none;
+}
+.white-space .reg .log {
+    margin-right: 10px;
+}
+.white-space .reg{
+    position: relative;
+}
+.white-space .reg span::after{
+content: "";
+position: absolute;
+content: "";
+    position: absolute;
+    border-top: 2px solid black;
+    width: 7px;
+    height: 10px;
+    bottom: 6px;
+    left: 41%;
+}
+.white-space .reg .log:hover{
+    color: #a00000;
+}
+.white-space .reg .regest:hover{
+    color: #a00000;
+}
+.white-space .social-lang .social svg {
+    padding-left: 10px;
+    color: var(--sec-color);
+}
+.white-space .social-lang .social .insta{
+    border-right: 1px solid black;
+    padding-right: 11px;
+}
+.white-space .social-lang .lang .btn{
+    background-color: transparent;
+    color: var(--sec-color);
+    border: none;
+    padding: 5px;
+    margin-left: 5px;
+}
+/* end white space  */
+/* start nav  */
+.navbar .left img{
+width: 55px;
+height: 88px;
+}
+.navbar {
+    background-color: black;
+    color: white;
+}
+.navbar .left .text span{
+    color: #a00000;
+}
+.navbar .left .text h3{
+    line-height: 2;
+    font-family: bukrabold;
+    font-size: 24px;
+}
+.navbar .left .text h6{
+    font-family:bukraregular ;
+    line-height: 0;
+}
+.navbar .navbar-nav .nav-item{
+
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color:white;
+
+}
+.navbar .navbar-nav{
+    width: 100%;
+    justify-content: space-between;
+}
+/* end nav  */
+/* start landing  */
+.landing{
+    position: relative;
+}
+.landing .img img{
+    width: 100%;
+}
+.landing::after{
+    content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: #0000001f;
+top: 0;
+}
+.landing .land-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.landing .land-text h1 {
+font-family:bukrabold ;
+color: black;
+font-size: 48px;
+}
+@media (max-width:425px) {
+    .landing .land-text h1{
+        font-size: 32px;
+    }
+}
+
+
+/* end landing  */
+.login{
+    position: relative;
+    background-image: url(../imgs/loginbg.png);
+    background-size: 100% 100%;
+}
+.login .logbox{
+    margin-bottom: 30px;
+}
+
+.login .logbox .text{
+    text-align: center;
+}
+.login .logbox .text h1{
+    font-size: 48px;
+font-family: bukraregular;
+margin-bottom: 40px;
+margin-top: 70px;
+}
+.login form {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 10px;
+    background-color: white;
+}
+.login form h5 {
+    padding: 20px;
+    font-family: 'bukrabold';
+}
+.login .logbox form .upload h3{
+    font-family: 'bukrabold';
+    margin-bottom: 15px;
+    font-size: 18px;
+    margin-left: 20px;
+    
+}
+
+.login .logbox form button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px ;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: bukraregular ;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.login .logbox form button:hover{
+    background-color: #a00000;
+}
+.login .logbox form a{
+    font-family: bukraregular;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: #898989;
+    border-radius: 50%;
+}
+svg.svg-inline--fa.fa-folder-plus{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #a00000;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+.inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+.upload .content {
+    border: 1px dashed black;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 20px;
+}
+.upload .content span {
+    font-family: bukraregular;
+    font-size: 16px;
+    color: #898989;
+}
+
+
+
+
+/* start footer  */
+footer{
+    background-image: url(../imgs/serv.png);
+    background-size: cover;
+}
+footer .lists {
+    justify-content: space-evenly;
+}
+footer .l-one h2 {
+    font-family: bukraregular;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+footer .l-one ul{
+    margin-top: 30px;
+}
+footer .l-one ul li {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+footer .l-one ul li:hover{
+    color: #a00000;
+}
+footer .l-two{
+    border-bottom: 1px solid white;
+    margin-top: 30px;
+}
+footer .l-two h3{
+    font-family: bukraregular;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 10px;
+}
+footer .l-two input{
+    width: 80%;
+    border: none;
+    border-radius: 20px;
+    background-color: #0f1214;
+    padding: 8px;
+    color: white;
+    margin: 20px 0;
+}
+footer .l-two button{
+    background-color: white;
+    color: black;
+    padding: 5px 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: bukraregular ;
+    border: none;
+    margin: 0 0px 50px;
+}
+footer .l-two button:hover{
+    background-color: #a00000;
+    color: white;
+}
+footer .social-icons .socialmedia{
+    display: flex;
+}
+
+footer .social-icons .socialmedia .fb ,
+footer .social-icons .socialmedia .tw ,
+footer .social-icons .socialmedia .snap , 
+footer .social-icons .socialmedia .inst{
+    border-radius: 50%;
+    background-color: #0c0f11;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+footer .social-icons .socialmedia .fb:hover{
+    background-color: #a00000;
+}
+
+footer .social-icons .socialmedia .tw:hover{
+    background-color: #a00000;
+}
+footer .social-icons .socialmedia .snap:hover {
+    background-color: #a00000;
+}
+footer .social-icons .socialmedia .inst:hover{
+    background-color: #a00000;
+}
+
+footer .l-three h2{
+    font-size: 24px;
+color: white;
+font-family: 'bukraregular';
+padding: 30px 0 0;
+}
+footer .l-three li {
+    color: white;
+font-family: bukraregular;
+font-size: 16px;
+display: flex;
+align-items: center;
+padding: 10px 0;
+}
+footer .l-three li div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #a00000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px 0;
+}
+.row.space {
+    margin-bottom: 70px;
+}
+.bottom-mail{
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.row .copy {
+    font-family: bukraregular;
+    font-size: 14px;
+    color: white;
+
+}
+.row .efadh {
+    font-family: bukraregular;
+    font-size: 14px;
+    color: white;
+}
+.row .copy span , 
+.row .efadh span {
+    color: #a00000;
+}
+.row .end{
+    text-align: end;
+}
+/* end footer  */
+.back-to-top button .go-top {
+    font-size: 35px;
+    color: white;
+}
+.back-to-top button {
+    background-color: black;
+padding: 5px;
+position: fixed;
+top: 90%;
+left: 95%;
+border: none;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+}
+.back-to-top button:hover{
+    background-color: #a00000;
+}
+
+
+
