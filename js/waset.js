@@ -24,15 +24,40 @@
 
 
     jQuery(document).ready(function() {
-        jQuery("#video").click(function() {
-            if (jQuery("#video").get(0).paused) {
-                jQuery("#video").trigger('play');
-                jQuery(".play").fadeOut(500);
-            } else {
-                jQuery("#video").trigger('pause');
-                jQuery(".play").fadeIn(500);
-            }
-        });
+        var video = $('#video').get(0);
+
+        
+        jQuery(".play ").on('click',function() {
+
+
+
+         
+
+    if ( video.paused ) {
+        video.play();
+
+        $(".pause").show();
+    } else {
+        video.pause();
+       
+        $(".pause").hide();
+    }
+
+    return false;
+
+
+        })
+
+
+        // jQuery("#video").click(function() {
+        //     if (jQuery("#video").get(0).paused) {
+        //         jQuery("#video").trigger('play');
+        //         jQuery(".play").fadeOut(500);
+        //     } else {
+        //         jQuery("#video").trigger('pause');
+        //         jQuery(".play").fadeIn(500);
+        //     }
+        // });
     });
     
 
@@ -116,4 +141,7 @@
         $backToTop.on('click', function(e) {
           $("html, body").animate({scrollTop: 0}, 500);
         });
+        
+
+
         

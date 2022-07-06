@@ -77,15 +77,15 @@ content: "";
         background-color: black;
         color: white;
     }
-    .navbar .left .text span{
+    .navbar .left .text1 span{
         color: #a00000;
     }
-    .navbar .left .text h3{
+    .navbar .left .text1 h3{
         line-height: 2;
         font-family: bukrabold;
         font-size: 24px;
     }
-    .navbar .left .text h6{
+    .navbar .left .text1 h6{
         font-family:bukraregular ;
         line-height: 0;
     }
@@ -107,6 +107,7 @@ content: "";
         justify-content: space-between;
     }
     /* end nav  */
+    
     /* start landing  */
 .landing{
     position: relative;
@@ -140,6 +141,9 @@ font-size: 48px;
 
 
 /* end landing  */
+.text{
+    margin-bottom: 70px;
+}
 .text .container h3{
     font-size: 36px;
     font-family: bukraregular;

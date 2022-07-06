@@ -145,6 +145,9 @@ font-size: 48px;
     background-image: url(../imgs/loginbg.png);
     background-size: 100% 100%;
 }
+.login .logbox{
+     margin-bottom: 70px;
+}
 
 .login .logbox .text{
     text-align: center;
